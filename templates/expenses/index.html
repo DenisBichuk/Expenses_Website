@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    &nbsp
+    <h2>Expenses List</h2>
+    &nbsp
+    <ul class="list-group">
+        <li class="list-group-item"> Bought some water</li>
+        <li class="list-group-item"> Bought some water</li>
+        <li class="list-group-item"> Bought some water</li>
+        <li class="list-group-item"> Bought some water</li>
+        <li class="list-group-item"> Bought some water</li>
+        <li class="list-group-item"> Bought some water</li>
+    </ul>
+    {% if user.is_authenticated %}
+        <form method="post" action="{% url 'account_logout' %}">
+            {% csrf_token %}
+            <button type="submit">Logout</button>
+        </form>
+    {% else %}
+        <a href="{% url 'account_signup'%}">Sign Up</a>
+    {% endif %}
+
+{% endblock %}
