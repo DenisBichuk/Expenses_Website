@@ -4,12 +4,12 @@
     <option name="dataSources">
       <list>
         <State>
-          <option name="id" value="3aa77867-716b-4694-839c-d950da8c3385" />
+          <option name="id" value="da297531-89ea-4cdc-b29d-6d831435b116" />
           <option name="name" value="db" />
-          <option name="dbmsName" value="SQLITE" />
+          <option name="dbmsName" value="UNKNOWN" />
           <option name="urls">
             <array>
-              <option value="file://$PROJECT_DIR$/db.sqlite3" />
+              <option value="file://$PROJECT_DIR$/../Django_Complete_CourseExerciseFiles/chartsdemoproject/db.sqlite3" />
             </array>
           </option>
           <option name="outLayout" value="File per object by schema.groovy" />
